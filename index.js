@@ -405,7 +405,7 @@ Logsene.prototype.log = function (level, message, fields, callback) {
 
   if (msg.message && typeof msg.message === 'string' && Buffer.byteLength(msg.message, 'utf8') > this.maxMessageFieldSize) {
     // new nodejs api, let's use Buffer.alloc instead of Buffer(size)
-    var cutMsg = Buffer.alloc ? Buffer.alloc(this.maxMessageFieldSize) : new Buffer(this.maxMessageFieldSize)
+    var cutMsg = Buffer.alloc ? Buffer.alloc(this.maxMessageFieldSize) : Buffer.from(this.maxMessageFieldSize)
     cutMsg.write(msg.message)
     msg.message = cutMsg.toString()
     if (msg.originalLine) {
