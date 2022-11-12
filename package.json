@@ -39,7 +39,7 @@
     "ip": "^1.1.4",
     "json-stringify-safe": "^5.0.1",
     "mkpath": "^1.0.0",
-    "request": "^2.88.0",
+    "request": "github:michalgrzegor/request#master",
     "stream-buffers": "github:michalgrzegor/node-stream-buffer#main"
   },
   "devDependencies": {
