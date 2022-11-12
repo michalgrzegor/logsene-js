@@ -40,7 +40,7 @@
     "json-stringify-safe": "^5.0.1",
     "mkpath": "^1.0.0",
     "request": "^2.88.0",
-    "stream-buffers": "^3.0.1"
+    "stream-buffers": "github:michalgrzegor/node-stream-buffer#main"
   },
   "devDependencies": {
     "mocha": "^6.1.4",
